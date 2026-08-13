@@ -2,12 +2,13 @@ nums = [1, 2, 2, 3, 4, 4, 5, 5, 5]
 
 result = []
 
+seen = set()
+
 
 for num in nums:
-    if num in result:
-        pass
-    else:
+    if num not in seen:
         result.append(num)
+        seen.add(num)
 
 print(result)    
 
