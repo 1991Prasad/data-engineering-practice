@@ -26,22 +26,23 @@
 #Approach 2
 # Two pointers technique
 
-s = "madam"
+s = "aaa0aaa"
 
-left_max = 0
-right_max = len(s)-1
+left_point = 0
+right_point = len(s)-1
 
-while left_max < right_max:
-
-    if s[left_max] != s[right_max]:
-        print("String is not a palindrome")
+while left_point<right_point:
+    if s[left_point] != s[right_point]:
+        print("The string is not a palindrome")
         break
 
-    left_max += 1
-    right_max -= 1
+    left_point += 1
+    right_point -= 1
 
 else:
-    print("String is a palindrome")
+    print("The string is a palindrome")
+
+
 
     
 
