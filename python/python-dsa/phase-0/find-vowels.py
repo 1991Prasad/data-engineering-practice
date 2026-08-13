@@ -9,8 +9,8 @@ for letters in s:
 
 print("No. of volwels are - ",counter)        
 
-TC: O(n)
-SC: O(1)
+# TC: O(n)
+# SC: O(1)
 
 # Explanation: I initialize a counter to zero and create a set containing the five vowels. 
 # I then traverse the string once and check whether each character exists in the vowel set. 
