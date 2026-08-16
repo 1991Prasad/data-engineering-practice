@@ -21,3 +21,18 @@ for char in frequency:
 
 # I am traversing the the array once and checking if the key is present or not if present I am incrementing the value of key by one 
 # Since I am traversing the array once it is O(n) while frequency in worst case will be all distinct key so SC will be O(n)
+
+
+
+# Approach 2 using XOR where space can be O(1)
+
+nums = [4, 1, 2, 1, 2]
+
+result = 0
+
+for num in nums:
+    result = result ^ num
+
+print(result)
+
+
