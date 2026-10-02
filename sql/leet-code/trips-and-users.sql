@@ -27,7 +27,7 @@ WITH CancelRideCTE AS
     AND request_at between '2013-10-01' AND '2013-10-03'
     group by request_at
 )
-select a.Day,ISNULL(ROUND((1.0*CancelledTotalCount/TotalCount),2),0.00)   as [Cancellation Rate]
+select a.Day,ISNULL(ROUND((1.0*CancelledTotalCount/TotalCount),2),0.00) as [Cancellation Rate]
 from TotalRideCTE a 
 Left join CancelRideCTE b
 on a.Day = b.Day
